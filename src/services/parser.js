@@ -66,6 +66,7 @@ export function convertToStackNotation(parsed) {
   let stack = [];
 
   for (let item of parsed) {
+    // a way to differentiate between operator and operand
     if (typeof item === 'number') {
       result.push(item);
     } else {
