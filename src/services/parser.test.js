@@ -13,7 +13,7 @@ it('throws if number of parentheses does not add up', () => {
 });
 
 it('parses a correct expression', () => {
-  const expr = '1 * (10.1 - 3)';
+  const expr = '1 * (10.1 - 3 ^ 3)';
   expect(parse(expr))
-    .toEqual([1, '*', '(', 10.1, '-', 3, ')']);
+    .toEqual([1, '*', '(', 10.1, '-', 3, '^', 3, ')']);
 });

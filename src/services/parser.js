@@ -1,5 +1,5 @@
-const notAllowedSymbolsRegexp = /[^0-9+-:*,.()]/;
-const operandsRegexp = /(\+|-|:|\*|\(|\))/;
+const notAllowedSymbolsRegexp = /[^0-9+-:*,.()^]/;
+const operandsRegexp = /(\+|-|:|\*|\(|\)|\^)/;
 
 function tokenize(expr) {
   let tokens = [];
