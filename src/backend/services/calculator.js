@@ -1,4 +1,7 @@
-function calculate(expression) {
+const Web3 = require('web3');
+const web3 = new Web3(new Web3.providers.WebsocketProvider('wss://ropsten.infura.io/ws'));
+
+async function calculate(expression) {
   let stack = [];
 
   for (let item of expression) {

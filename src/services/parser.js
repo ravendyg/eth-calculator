@@ -1,8 +1,6 @@
 const notAllowedSymbolsRegexp = /[^\d+-/*.()^]/;
 const operandsRegexp = /(\+|-|\/|\*|\(|\)|\^)/;
 const exprPriority = {
-  '(': 0,
-  ')': 0,
   '-': 1,
   '+': 1,
   '*': 2,
